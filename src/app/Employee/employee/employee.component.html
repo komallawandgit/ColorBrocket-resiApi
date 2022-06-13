@@ -1,0 +1,26 @@
+<ngx-spinner bdOpacity="1" bdColor="rgba(97,197,212,0.07)" size="medium" color="#61c5d4" type="ball-spin-clockwise"
+>
+<p style="color: #61c5d4;">Loading...</p>
+</ngx-spinner>
+<div class="container">
+   
+    <h3 class="heading">Employee List  <span><button class="btn btn-success float-right"(click)="Logout()">Logout</button></span>
+    </h3>
+    <div class="row">
+        <div class="col-4 " *ngFor="let emp of employeeData">
+            <div class="card" style="height:420px;border-radius: 20%;" (click)="viewEmployee(emp.id)" >
+                <h5 style="background-color: rgb(176, 202, 202);padding:10px;">Id-{{emp.id}}</h5>
+                 <div class="card-body">
+                  <h5 class="card-title"> Name-{{emp.name}}</h5>
+                  <h5 class="card-title">Logo-{{emp.company_logo}}</h5>
+                  <h5 class="card-title">Company Name-{{emp.company}}</h5>
+                  <h5 class="card-text">Designation-{{emp.designation}}</h5>
+                </div>
+              </div>
+        </div>
+       
+    </div>
+   
+
+</div>
+

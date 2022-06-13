@@ -1,0 +1,26 @@
+
+<div class="container">
+ 
+    <h3 class="heading">Employee Details
+      <span><button class="btn btn-success float-right" (click)="logout()">Logout</button></span>
+    </h3>
+    <div>
+        <div class="card" style="width:500;padding:10px;">
+            <div class="card-body">
+              <h5 class="card-title">Id-{{EmployeeData.id}}</h5>
+              <h5 class="card-text">Name-{{EmployeeData.name}}</h5>
+            </div>
+            <ul class="list-group list-group-flush p-10">
+              <li class="list-group-item">Rating-{{EmployeeData.rating}}</li>
+              <li class="list-group-item">Company-{{EmployeeData.company}}</li>
+              <li class="list-group-item">Interests-{{EmployeeData.interests}}</li>
+              <li class="list-group-item">Designation-{{EmployeeData.designation}}</li>
+              <li class="list-group-item p-10">Company_logo-{{EmployeeData.company_logo}}</li>
+              <li class="list-group-item p-10">Job_descripton-{{EmployeeData.job_descripton}}</li>
+            </ul>
+            <div class="card-body">
+                <a href="{{EmployeeData.view_more}}" target="_blank">View More</a>
+            </div>
+          </div>
+    </div>
+</div>

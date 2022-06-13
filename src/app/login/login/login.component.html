@@ -1,0 +1,53 @@
+
+<div class="contentss">
+
+	<div class="d-flex justify-content-center h-100">
+		<form class="form" [formGroup]="LoginForm" (ngSubmit)="Login()" novalidate>
+
+			<fieldset>
+				<h2 class="title">Login to  {{title|uppercase}} </h2>
+				
+				<div class="form-group mt_30">
+					<div>
+						<label for="User Id">User Id</label>
+					</div>
+					
+					<input class="form-control" placeholder="user_id" formControlName="user_id"
+						class="form-control input-lg customeinput" [ngClass]="{ 'is-invalid': submitted && f.user_id.errors }">
+						<div *ngIf="submitted && f.user_id.errors" class="invalid-feedback">
+							<div *ngIf="f.user_id.errors.required">User Id is required</div>
+							<div *ngIf="f.user_id.errors.email">User Id must be a valid email address</div> 
+  
+						</div>
+					</div>
+				
+
+					
+				<div class="form-group mt_30">
+					<div>
+						<label for="password">Password</label>
+					</div>
+					
+					<input type="password" formControlName="password" class="form-control input-lg customeinput"
+						placeholder="password" [ngClass]="{ 'is-invalid': submitted && f.user_id.errors }">
+						<div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+							<div *ngIf="f.password.errors.required">Password is required</div>
+							<div *ngIf="f.password.errors.minlength">Password must be at least 8 characters</div>                      
+						  </div>
+
+				</div>
+				<div class="row">
+					<div class="col-md-12 col-ld-12 col-sm-12 mt_30">
+						<span class="button-checkbox">
+							<input type="checkbox" name="remember_me" id="remember_me" checked="checked" class="hidden">
+							<a href="" class="btn btn-link pull-left forgotpass">Forgot Password?</a>
+							<button type="submit" value="Login" class="btn pull-right login_btn" data-color="info">Login
+							</button>
+						</span>
+					</div>
+				</div>
+			</fieldset>
+
+		</form>
+	</div>
+</div>

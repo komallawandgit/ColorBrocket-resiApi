@@ -1,0 +1,104 @@
+*{
+    font-family: 'Noto Sans', sans-serif !important;
+  
+  }
+  .contentss{
+    align-content: center;
+    display: block;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border: 1px solid #ff6929;
+    padding: 5%;
+    background-color: rgb(219, 253, 242);
+
+  }
+  
+  .title {
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #ff6929;
+    margin: 10px 0px 25px 0px;
+    background-color: #4f4f4f;
+    padding: 5%;
+  }
+  .customeinput {
+    background: #ffffff;
+    border: 1px solid #bdbdbd;
+    box-sizing: border-box;
+    border-radius: 4px;
+    height: 32px;
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    color: #4f4f4f;
+  }
+  .mt_30 {
+    margin-top: 30px;
+  }
+  .forgotpass {
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #2f80ed;
+  }
+ 
+  
+  .login_btn {
+    width: 122px;
+    height: 32px;
+    left: 313px;
+    top: 202.5px;
+    background: #ff6929;
+    border-radius: 2px;
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  .login_btn:hover {
+    color: #ff6929;
+    background-color: #ffff;
+    border: 1px solid #ff6929;
+  }
+  .links {
+    color: white;
+  }
+  .links a {
+    margin-left: 4px;
+  }
+  
+  #cover {
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+ 
+  input:focus {
+    outline: 0 0 0 0 !important;
+    box-shadow: 0 0 0 0 !important;
+  }
+  .remember {
+    color: white;
+  }
+  
+  .links a {
+    margin-left: 4px;
+  }
+  
